@@ -32,13 +32,22 @@ const App = () => {
     setBooks(newBooks);
   }
 
+  const handleBookMemoChange = (id: number, memo: string) => {
+    const newBooks =books.map((b) => {
+      return b.id === id
+      ?{ ...b, memo:memo }
+      : b;
+    });
+    setBooks(newBooks);
+  }
+
   const bookRows = books.map((b) =>{
     return (
       <BookRow
         book = {b}
         key = {b.id}
-        onMemoChange={(id, memo) => {}}
-        onDelete={(id) => {handleBookDelete(id)}}
+        onMemoChange={(id, memo) => handleBookMemoChange(id, memo)}
+        onDelete={(id) => handleBookDelete(id)}
       />
     );
   });
