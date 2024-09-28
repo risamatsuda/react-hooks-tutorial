@@ -14,15 +14,15 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-modal": "^3.11.2",
-    "react-scripts": "3.4.3",
+    "react-scripts": "^5.0.1",
     "typescript": "~3.7.2"
   },
   "scripts": {
-  "start": "react-scripts start --openssl-legacy-provider",
-  "build": "react-scripts build --openssl-legacy-provider",
-  "test": "react-scripts test --openssl-legacy-provider",
-  "eject": "react-scripts eject"
-},
+    "start": "react-scripts start --openssl-legacy-provider",
+    "build": "react-scripts build --openssl-legacy-provider",
+    "test": "react-scripts test --openssl-legacy-provider",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
